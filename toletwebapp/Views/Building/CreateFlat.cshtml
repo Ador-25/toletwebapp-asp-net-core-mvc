@@ -1,0 +1,78 @@
+﻿@model toletwebapp.Models.Flat
+
+@{
+        ViewData["Title"] = "Edit";
+}
+
+<h1>Create Flat</h1>
+
+<div class="row">
+        <div class="col-md-4">
+                <form asp-action="CreateFlat" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                         <div class="form-group">
+                                <label asp-for="Image1" class="control-label"></label>
+                                <input asp-for="ImageUpload1" class="form-control" />
+                                <img id="imgpreview" class="pt-2" />
+                                <span asp-validation-for="ImageUpload1" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                                <label asp-for="Size" class="control-label"></label>
+                                <input asp-for="Size" class="form-control" />
+                                <span asp-validation-for="Size" class="text-danger"></span>
+                        </div>
+
+                        
+                        <div class="form-group">
+                                <label asp-for="Beds" class="control-label"></label>
+                                <input asp-for="Beds" class="form-control" />
+                                <span asp-validation-for="Beds" class="text-danger"></span>
+                        </div>
+                                                <div class="form-group">
+                                <label asp-for="Baths" class="control-label"></label>
+                                <input asp-for="Baths" class="form-control" />
+                                <span asp-validation-for="Baths" class="text-danger"></span>
+                        </div>
+                         <div class="form-group">
+                                <label asp-for="Balcony" class="control-label"></label>
+                                <input asp-for="Balcony" class="form-control" />
+                                <span asp-validation-for="Balcony" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                                <label asp-for="PhoneNumber" class="control-label"></label>
+                                <input asp-for="PhoneNumber" class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                                                <div class="form-group">
+                                <label asp-for="Rent" class="control-label"></label>
+                                <input asp-for="Rent" class="form-control" />
+                                <span asp-validation-for="Rent" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                                <button class="btn btn-primary">Create Flat</button>
+                        </div>
+                </form>
+        </div>
+</div>
+
+<div>
+        <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+
+<script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+<script>
+        $("#ImageUpload").change(function() {
+                readURL(this);
+        });
+        CKEDITOR.replace( 'Description' );
+</script>
+
+}

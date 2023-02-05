@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using toletwebapp.Contexts;
 
@@ -11,9 +12,10 @@ using toletwebapp.Contexts;
 namespace toletwebapp.Migrations
 {
     [DbContext(typeof(IdentityDbContext))]
-    partial class IdentityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230202100408_temp")]
+    partial class temp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -259,50 +261,6 @@ namespace toletwebapp.Migrations
                     b.ToTable("Buildings");
                 });
 
-            modelBuilder.Entity("toletwebapp.Models.Flat", b =>
-                {
-                    b.Property<int>("FlatId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FlatId"), 1L, 1);
-
-                    b.Property<int>("Balcony")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Baths")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Beds")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("BuildingId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("Id")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Image1")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("Rent")
-                        .HasColumnType("float");
-
-                    b.Property<double>("Size")
-                        .HasColumnType("float");
-
-                    b.HasKey("FlatId");
-
-                    b.HasIndex("BuildingId");
-
-                    b.ToTable("Flats");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -352,15 +310,6 @@ namespace toletwebapp.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("toletwebapp.Models.Flat", b =>
-                {
-                    b.HasOne("toletwebapp.Models.Building", "Building")
-                        .WithMany()
-                        .HasForeignKey("BuildingId");
-
-                    b.Navigation("Building");
                 });
 #pragma warning restore 612, 618
         }

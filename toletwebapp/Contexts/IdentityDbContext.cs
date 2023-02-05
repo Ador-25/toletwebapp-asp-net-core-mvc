@@ -13,6 +13,7 @@ namespace toletwebapp.Contexts
         {
         }
         public DbSet<Building> Buildings { get; set; }
+        public DbSet<Flat> Flats { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

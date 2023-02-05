@@ -1,14 +1,12 @@
-﻿@model IEnumerable<Building>
+﻿@model IEnumerable<Flat>
 
 @{
-        ViewData["Title"] = "Products";
+        ViewData["Title"] = "Flats";
 }
 
-<h1>Buildings</h1>
+<h1>Flats</h1>
 
-<p>
-        <a asp-action="Create">Create New</a>
-</p>
+
 
 
 <div class="row" style="padding-left:10%">
@@ -17,19 +15,25 @@
     <div class="col-auto" style="padding-bottom:10px">
         <div class="card shadow-lg p-3 mb-5 bg-#444444 rounded " style="width: 20rem;">
             <div class="text-center">
-                <img src="/media/products/@item.Image" class="card-img-top" alt="..." style=" width:10rem; height:12rem">
+                <img src="/media/products/@item.Image1" class="card-img-top" alt="..." style=" width:10rem; height:12rem">
                 </div>
 
   <div class="text-center">
         <h5 class="card-title" style="padding:2px">Bashundhara 
             <p>
-                Block: @item.Block Road: @item.Road
+                Block: @item.Building.Block Road: @item.Building.Road
             </p>
+            <p>
+                Bedroom: @item.Beds Bathroom: @item.Baths Balcony: @item.Balcony
+            </p>
+            <p>
+                Size: @item.Size Rent: @item.Rent
+            </p>
+
         </h5>
   </div>
- <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a> 
-  <a asp-action="CreateFlat" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Create Flat</a> 
-<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+ <a asp-action="Edit" asp-route-id="@item.FlatId" class="btn btn-sm btn-warning">Edit</a> 
+<a asp-action="Delete" asp-route-id="@item.FlatId" class="btn btn-sm btn-danger">Delete</a>
  
 
 

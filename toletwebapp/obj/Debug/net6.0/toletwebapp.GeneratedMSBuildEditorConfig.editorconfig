@@ -19,12 +19,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Building/CreateFlat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdcQ3JlYXRlRmxhdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Building/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Building/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Building/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Flat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxhdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Flat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/My Projects/Github Projects/toletwebapp-asp-net-core-mvc/toletwebapp/Views/Home/Index.cshtml]

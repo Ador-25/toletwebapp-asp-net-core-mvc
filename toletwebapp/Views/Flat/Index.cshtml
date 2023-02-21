@@ -12,44 +12,20 @@
 <div class="row" style="padding-left:10%">
     @foreach(var item in Model)
 {
-    <div class="col-auto" style="padding-bottom:10px">
-        <div class="card shadow-lg p-3 mb-5 bg-#444444 rounded " style="width: 20rem;">
-            <div class="text-center">
-                <img src="/media/products/@item.Image1" class="card-img-top" alt="..." style=" width:10rem; height:12rem">
+    <div>
+        <div class= " row">
+            <div>
+                    <p>
+        Beds: @item.Beds: Baths: @item.Baths Rent: @item.Rent 
+    </p>
                 </div>
+            <div class="col">  <img src="/media/products/@item.Image1" class="card-img-top" alt="..." style=" width:10rem; height:12rem"></div>
+        </div>
+    </div>
 
-  <div class="text-center">
-        <h5 class="card-title" style="padding:2px">Bashundhara 
-            <p>
-                Block: @item.Building.Block Road: @item.Building.Road
-            </p>
-            <p>
-                Bedroom: @item.Beds Bathroom: @item.Baths Balcony: @item.Balcony
-            </p>
-            <p>
-                Size: @item.Size Rent: @item.Rent
-            </p>
-
-        </h5>
-  </div>
- <a asp-action="Edit" asp-route-id="@item.FlatId" class="btn btn-sm btn-warning">Edit</a> 
-<a asp-action="Delete" asp-route-id="@item.FlatId" class="btn btn-sm btn-danger">Delete</a>
- 
-
-
-
-
-</div>
-
-
-
-
-
-</div> 
-
-
-
-   
+    <a asp-controller="flat" asp-action="Details" asp-route-id="@item.FlatId">
+        Details
+    </a>
 
 }
     <hr />

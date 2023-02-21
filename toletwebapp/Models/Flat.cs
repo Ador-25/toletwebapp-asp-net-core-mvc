@@ -22,6 +22,30 @@ namespace toletwebapp.Models
         [NotMapped]
         public IFormFile ImageUpload1 { get; set; }
 
-        
+
+
+        public string Image2 { get; set; } = "noimage.png";
+        [NotMapped]
+        public IFormFile ImageUpload2 { get; set; }
+
+
+
+        public string Image3 { get; set; } = "noimage.png";
+        [NotMapped]
+        public IFormFile ImageUpload3 { get; set; }
+
+
+
+        public string Image4 { get; set; } = "noimage.png";
+        [NotMapped]
+        public IFormFile ImageUpload4 { get; set; }
+
+
+        public string Image5 { get; set; } = "noimage.png";
+        [NotMapped]
+        public IFormFile ImageUpload5 { get; set; }
+
+
+
     }
 }

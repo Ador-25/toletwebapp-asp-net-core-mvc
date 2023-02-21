@@ -14,7 +14,7 @@
 <div class="row" style="padding-left:10%">
     @foreach(var item in Model)
 {
-    <div class="col-auto" style="padding-bottom:10px">
+    <div class="col-auto" style="padding:10px; margin:10px">
         <div class="card shadow-lg p-3 mb-5 bg-#444444 rounded " style="width: 20rem;">
             <div class="text-center">
                 <img src="/media/products/@item.Image" class="card-img-top" alt="..." style=" width:10rem; height:12rem">
@@ -27,9 +27,24 @@
             </p>
         </h5>
   </div>
- <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Edit</a> 
-  <a asp-action="CreateFlat" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Create Flat</a> 
-<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+
+  <div class="text-center">
+           <div class="col" style="padding:1px">
+          <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn btn-warning" style="width:9rem">Edit</a> 
+     </div>
+     <div class="col" style="padding:1px">
+           <a asp-action="CreateFlat" asp-route-id="@item.Id" class="btn btn-primary" style="width:9rem">Create Flat</a>
+     </div>
+     <div class="col" style="padding:1px">
+         <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn btn-danger" style="width:9rem">Delete</a>
+     </div>
+      </div>
+
+
+
+
+ 
+
  
 
 

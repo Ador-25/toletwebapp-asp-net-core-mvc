@@ -13,14 +13,15 @@ namespace toletwebapp.Controllers
             _db = db;
             _webHostEnvironment = wb;
         }
-        public IActionResult Index()
+        public IActionResult Index(Guid id)
         {
-            return View(_db.Flats.ToList());
+            return View(_db.Flats.Where(u=>u.Id==id).ToList());
         }
-
-
-
-
-        
+        public IActionResult Details(int id) {
+            var flat = _db.Flats.Find(id);
+            var building = _db.Buildings.Find(flat.Id);
+            flat.Building = building;
+            return View(flat);
+        }
     }
 }

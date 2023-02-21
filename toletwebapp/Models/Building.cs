@@ -10,6 +10,7 @@ namespace toletwebapp.Models
         public Guid Id { get; set; }= Guid.NewGuid();
         public string Block { get; set; }
         public string Road { get; set; }
+        public string House { get; set; }
         public DateTime ClosingTime { get; set; }
         public string Image { get; set; } = "noimage.png";
         public string Description { get; set; } = "Notes";

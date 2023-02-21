@@ -1,0 +1,56 @@
+﻿@model toletwebapp.Models.Flat
+
+@{
+        ViewData["Title"] = "Flat";
+}
+<div class="row">
+    <div class="col" style="width:20%">
+        <strong>Block: @Model.Building.Block</br></strong>
+        <strong>Road: @Model.Building.Road</br></strong>
+        <strong>House: @Model.Building.House</br></strong>
+
+        <strong>Bedrooms: @Model.Beds </br></strong>
+        <strong>Bathrooms: @Model.Baths </br></strong>
+        <strong>Balcony: @Model.Balcony </br></strong>
+        <strong>Flat Size: @Model.Size </br></strong>
+        <strong>Contact Owner: @Model.PhoneNumber </br></strong>
+      
+        <strong>Rent: @Model.Rent</strong>
+
+    </div>
+
+
+
+
+
+    <div class="col">
+
+        <h2>
+            Images: 
+        </h2>
+            <div>
+        <div class= " row">
+            <div class="col">  <img src="/media/products/@Model.Image1" class="card-img-top" alt="..." style=" width:10rem; height:9rem"></div>
+             <div class="col">  <img src="/media/products/@Model.Image2" class="card-img-top" alt="..." style=" width:10rem; height:9rem"></div>
+        </div>
+        </br>
+        <div class="row">
+             <div class="col">  <img src="/media/products/@Model.Image3" class="card-img-top" alt="..." style=" width:10rem; height:6rem"></div>
+               <div class="col">  <img src="/media/products/@Model.Image4" class="card-img-top" alt="..." style=" width:10rem; height:6rem"></div>
+              
+        </div class="row">
+        <div class="col">
+            </br>
+              <div class="col">  <img src="/media/products/@Model.Image5" class="card-img-top" alt="..." style=" width:23rem; height:10rem"></div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    </div>
+    <div class="col">
+
+    </div>
+
+
+</div>

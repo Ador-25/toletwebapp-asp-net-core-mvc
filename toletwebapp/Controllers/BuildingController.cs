@@ -124,6 +124,60 @@ namespace toletwebapp.Controllers
 
                 product.Image1 = imageName;
             }
+            if (product.ImageUpload2 != null)
+            {
+                string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
+                string imageName = Guid.NewGuid().ToString() + "_" + product.ImageUpload2.FileName;
+
+                string filePath = Path.Combine(uploadsDir, imageName);
+
+                FileStream fs = new FileStream(filePath, FileMode.Create);
+                await product.ImageUpload2.CopyToAsync(fs);
+                fs.Close();
+
+                product.Image2 = imageName;
+            }
+            if (product.ImageUpload3 != null)
+            {
+                string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
+                string imageName = Guid.NewGuid().ToString() + "_" + product.ImageUpload3.FileName;
+
+                string filePath = Path.Combine(uploadsDir, imageName);
+
+                FileStream fs = new FileStream(filePath, FileMode.Create);
+                await product.ImageUpload3.CopyToAsync(fs);
+                fs.Close();
+
+                product.Image3 = imageName;
+            }
+
+            if (product.ImageUpload4 != null)
+            {
+                string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
+                string imageName = Guid.NewGuid().ToString() + "_" + product.ImageUpload4.FileName;
+
+                string filePath = Path.Combine(uploadsDir, imageName);
+
+                FileStream fs = new FileStream(filePath, FileMode.Create);
+                await product.ImageUpload4.CopyToAsync(fs);
+                fs.Close();
+
+                product.Image4 = imageName;
+            }
+
+            if (product.ImageUpload5 != null)
+            {
+                string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
+                string imageName = Guid.NewGuid().ToString() + "_" + product.ImageUpload5.FileName;
+
+                string filePath = Path.Combine(uploadsDir, imageName);
+
+                FileStream fs = new FileStream(filePath, FileMode.Create);
+                await product.ImageUpload5.CopyToAsync(fs);
+                fs.Close();
+
+                product.Image5 = imageName;
+            }
 
             _db.Flats.Add(product);
             await _db.SaveChangesAsync();

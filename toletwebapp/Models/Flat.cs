@@ -13,6 +13,7 @@ namespace toletwebapp.Models
         public int Beds { get; set; }
         public int Baths { get; set; }
         public int Balcony { get; set; }
+        public int Kitchens { get; set; } = 1;
         public string PhoneNumber { get; set; }
         public double Rent { get; set; }
 

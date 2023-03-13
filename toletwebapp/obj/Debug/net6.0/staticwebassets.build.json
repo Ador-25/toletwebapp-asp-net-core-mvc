@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iZN3Xw5sYwnKuo+cm09CyLM59T+UAi1i8h+PB+4grx4=",
+  "Hash": "bSzLYZwayDfSssVr2m2B+Q1jF6bYvJQYJSpqFfWhTkg=",
   "Source": "toletwebapp",
   "BasePath": "_content/toletwebapp",
   "Mode": "Default",
@@ -1664,6 +1664,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\products\\e344a365-6b62-4171-b096-945378f2ba3b_agony.jpg"
+    },
+    {
+      "Identity": "D:\\My Projects\\Github Projects\\toletwebapp-asp-net-core-mvc\\toletwebapp\\wwwroot\\media\\products\\ed8da047-6b19-4062-a07b-6e5d4cf2eb79_53fb7428-531f-4eb7-94c2-747e883c8e55_in2.jpg",
+      "SourceId": "toletwebapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My Projects\\Github Projects\\toletwebapp-asp-net-core-mvc\\toletwebapp\\wwwroot\\",
+      "BasePath": "_content/toletwebapp",
+      "RelativePath": "media/products/ed8da047-6b19-4062-a07b-6e5d4cf2eb79_53fb7428-531f-4eb7-94c2-747e883c8e55_in2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\products\\ed8da047-6b19-4062-a07b-6e5d4cf2eb79_53fb7428-531f-4eb7-94c2-747e883c8e55_in2.jpg"
     },
     {
       "Identity": "D:\\My Projects\\Github Projects\\toletwebapp-asp-net-core-mvc\\toletwebapp\\wwwroot\\media\\products\\f164b3ba-8482-436e-b7c8-c6c77642bac5_index.jpg",

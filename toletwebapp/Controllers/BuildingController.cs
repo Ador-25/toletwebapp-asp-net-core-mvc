@@ -29,7 +29,7 @@ namespace toletwebapp.Controllers
         public async Task<IActionResult> Create(Building product)
         {
             //ViewBag.Categories = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
-
+            
             if (ModelState.IsValid)
             {
                 

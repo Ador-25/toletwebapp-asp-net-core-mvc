@@ -6,9 +6,10 @@ using toletwebapp.Contexts;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<IdentityDbContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("toletconn")));
+    options => options.UseNpgsql(builder.Configuration.GetConnectionString("toletconn")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 

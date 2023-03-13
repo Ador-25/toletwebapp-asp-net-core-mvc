@@ -21,10 +21,12 @@
     </PackageReference>
     <PackageReference Include="Microsoft.TestPlatform.ObjectModel" Version="17.4.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration" Version="6.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Migrations\" />
     <Folder Include="wwwroot\media\products\" />
   </ItemGroup>
 
